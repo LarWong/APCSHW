@@ -106,7 +106,7 @@ public class Rational{
       Returns a positive integer if the calling number is larger than the parameter
       Returns a negative integer if the calling number is smaller than the parameter
     */
-    public int compare(Rational x){//subtracts or adds 1 to 0 based on comparison
+    public int compareTo(Rational x){//subtracts or adds 1 to 0 based on comparison
 	int equality = 0;
 	if (floatValue() > x.floatValue()){
 	    equality ++;
@@ -152,9 +152,9 @@ public class Rational{
 	r.divide(q);
 	System.out.println(r);//360/120
 	//test compare
-	System.out.println(t.compare(u));//0
-	System.out.println(v.compare(u));//1
-	System.out.println(u.compare(v));//-1
+	System.out.println(t.compareTo(u));//0
+	System.out.println(v.compareTo(u));//1
+	System.out.println(u.compareTo(v));//-1
 
 
 
