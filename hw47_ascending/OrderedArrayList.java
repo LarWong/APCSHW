@@ -31,17 +31,8 @@ public class OrderedArrayList
 
     public String toString()
     {
-	//used previous code from SuperArray
-	//changed var _size to ArrayList method _data.size()
-	String foo = "[";
-	for( int i = 0; i < _data.size(); i++ ) {
-	    foo += _data.get(i) + ",";
-	}
-	if ( foo.length() > 1 )
-	    //shave off trailing comma
-	    foo = foo.substring( 0, foo.length()-1 );
-	foo += "]";
-	return foo;
+	//uses ArrayList toString()
+	return _data.toString();
     }
 
 
