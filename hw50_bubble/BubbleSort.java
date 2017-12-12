@@ -91,7 +91,11 @@ public class BubbleSort {
     {
 	//creates a new ArrayList with contents of input
 	//copy elements from input to output
-	ArrayList<Comparable> output = new ArrayList<Comparable>(input);
+	ArrayList<Comparable> output = new ArrayList<Comparable>();
+	for (Comparable x : input){
+	    output.add(x);
+
+	}
 
 	//uses previous bubblesort method to sort output
 	bubbleSortV(output);
